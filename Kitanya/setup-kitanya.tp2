@@ -1,0 +1,190 @@
+BACKUP ~Kitanya/backup~
+//AUTHOR ~rastor@rpgdungeon.net~
+SUPPORT ~PaulaMigrate@mail.com~
+
+VERSION ~v7.0~
+
+AUTO_TRA ~Kitanya/%s~
+
+ALLOW_MISSING ~SOLAVAMP.DLG~
+
+ALWAYS
+  
+ACTION_IF (GAME_IS ~eet~) BEGIN
+    
+OUTER_SET bg2_chapter = 12
+  END 
+ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  
+OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    
+OUTER_SET bg2_chapter = bg2_chapter + 1
+    
+OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    
+OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  
+END
+END
+
+
+
+LANGUAGE ~American English~ ~English~ ~Kitanya/English/kitsetup.tra~
+
+BEGIN @0
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ ~This mod is exclusive for EE games~
+
+
+// Copying Creature Files
+
+COPY ~Kitanya/cre/r!kit07.cre~ ~override~  
+     ~Kitanya/cre/r!kit09.cre~ ~override~
+     ~Kitanya/cre/r!kit11.cre~ ~override~
+     ~Kitanya/cre/r!kit13.cre~ ~override~
+     ~Kitanya/cre/r!kit15.cre~ ~override~
+ SAY NAME1 @1
+ SAY NAME2 @1
+ SAY BIO @2
+ SAY SELECT_COMMON1 @3
+ SAY SELECT_COMMON2 @4
+ SAY SELECT_COMMON3 @5
+ SAY SELECT_COMMON4 @6
+ SAY SELECT_COMMON5 @7
+ SAY SELECT_COMMON6 @8
+ SAY BATTLE_CRY1 @9
+ SAY BATTLE_CRY2 @10
+ SAY BATTLE_CRY3 @11
+ SAY BATTLE_CRY4 @12
+ SAY BATTLE_CRY5 @13 
+ SAY SELECT_ACTION1 @14 
+ SAY SELECT_ACTION2 @15 
+ SAY SELECT_ACTION3 @16 
+ SAY SELECT_ACTION4 @17 
+ SAY SELECT_ACTION5 @18 
+ SAY SELECT_ACTION6 @19 
+ SAY SELECT_ACTION7 @20 
+ SAY AREA_FOREST @21
+ SAY AREA_DUNGEON @22 
+ SAY AREA_CITY @23
+ SAY AREA_DAY @24
+ SAY AREA_NIGHT @25 
+ SAY LEADER @26
+ SAY BORED @27
+ SAY UNHAPPY_ANNOYED @28 
+ SAY UNHAPPY_SERIOUS @29 
+ SAY UNHAPPY_BREAKING @30 
+ SAY HAPPY @31
+ SAY SELECT_RARE1 @32 
+ SAY SELECT_RARE2 @33 
+ SAY DAMAGE @34
+ SAY HURT @35
+ SAY DYING @36 
+ SAY CRITICAL_HIT @37 
+ SAY CRITICAL_MISS @38 
+ SAY TARGET_IMMUNE @39 
+ SAY INVENTORY_FULL @40 
+ SAY TIRED @41
+ SAY MORALE @42
+ WRITE_ASCII DEATHVAR ~R#KITANYA~
+ WRITE_ASCII DIALOG ~R#KITYA~
+ WRITE_SHORT 0x244 0
+ WRITE_SHORT 0x246 0x4002
+
+COPY ~Kitanya/cre/r!kitele.cre~ ~override~
+ SAY NAME1 @43
+ SAY NAME2 @43
+ WRITE_ASCII DEATHVAR ~R#ELETHIAL~
+ WRITE_ASCII DIALOG ~R#KITELE~
+
+COPY ~Kitanya/cre/r!kitvmp.cre~ ~override~
+ SAY NAME1 @44
+ SAY NAME2 @44
+ WRITE_ASCII DEATHVAR ~R#KITVAMP~
+ WRITE_ASCII DIALOG ~R#KITELE~
+
+COPY ~Kitanya/items/r!kitswd.itm~ ~override~
+ SAY NAME2 @45
+ SAY DESC @46
+
+COPY ~Kitanya/items/r!kitshd.itm~ ~override~
+ SAY NAME2 @47
+ SAY DESC @48
+
+COPY ~Kitanya/items/r!kitplt.itm~ ~override~
+ SAY NAME2 @49
+ SAY DESC @50
+
+COPY ~Kitanya/items/r!kitbdy.itm~ ~override~
+ SAY NAME1 @51
+ SAY NAME2 @51
+ SAY DESC @52
+
+COPY ~Kitanya/items/r!kitrbk.itm~ ~override~
+ SAY NAME1 @53
+ SAY NAME2 @53
+ SAY DESC @54
+
+COPY ~Kitanya/items/r!kitrng.itm~ ~override~
+ SAY NAME2 @55
+ SAY DESC @56
+
+COPY ~Kitanya/items/kitvswr1.itm~ ~override~
+
+EXTEND_TOP ~AR1105.bcs~ ~Kitanya/appends/kitspawn.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~Anomen.bcs~ ~Kitanya/appends/anoscript.baf~ EVALUATE_BUFFER
+
+EXTEND_BOTTOM ~AR0406.bcs~ ~Kitanya/appends/AR0406.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~cleanse.bcs~ ~Kitanya/appends/revive.baf~  EVALUATE_BUFFER
+
+EXTEND_TOP ~AR0809.bcs~ ~Kitanya/appends/AR0809.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~baldur.bcs~ ~Kitanya/appends/kbaldur.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~edwin.bcs~ ~Kitanya/appends/eddy.baf~ EVALUATE_BUFFER
+
+EXTEND_TOP ~AR1100.bcs~ ~Kitanya/appends/ar1100.baf~ EVALUATE_BUFFER
+
+COMPILE EVALUATE_BUFFER ~Kitanya/scripts~
+
+COPY ~Kitanya/graphics~ ~override~
+
+COMPILE EVALUATE_BUFFER ~Kitanya/dialogues~
+
+COPY ~Kitanya/sounds~ ~override~
+
+COPY ~Kitanya/spells/r!kitcrm.spl~ ~override~
+ SAY NAME1 @57
+
+COPY ~Kitanya/spells/r!kitdrw.spl~ ~override~
+     ~Kitanya/spells/r!kitnrm.spl~ ~override~
+
+ADD_JOURNAL @307 @409 @412 @418 USING ~Kitanya/%s/kitanyaj.TRA~
+ADD_JOURNAL @11 USING ~Kitanya/%s/kityvamp.TRA~
+ADD_JOURNAL @16 USING ~Kitanya/%s/pdialog.TRA~
+
+
+APPEND ~pdialog.2da~
+~R#Kitanya     R#kityP     R#kityJ     KitanyaD~
+UNLESS ~R#Kitanya~
+UNLESS ~25POST~
+
+APPEND ~pdialog.2da~
+~R#Kitanya     R#kityP     R#kityJ     kitanyaD     R#KIT25P     R#KIT25J     KitanyaD~
+UNLESS ~R#Kitanya~
+IF ~25POST~
+
+APPEND ~interdia.2da~
+~R#Kitanya     R#kityB~
+UNLESS ~R#Kitanya~
+UNLESS ~25FILE~
+
+APPEND ~interdia.2da~
+~R#Kitanya     R#kityB     R#KIT25B~
+UNLESS ~R#Kitanya~
+IF ~25FILE~
+
+

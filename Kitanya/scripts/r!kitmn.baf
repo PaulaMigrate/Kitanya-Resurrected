@@ -1,0 +1,158 @@
+IF
+ Global("InnatesGiven","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("InnatesGiven","LOCALS",1)
+  ApplySpellRES("GIVEINN",Myself)
+END
+
+IF
+ Global("PlayerLooksLikeDrow","GLOBAL",1)
+ Global("r!KitHasDrowPic","GLOBAL",0)
+THEN
+ RESPONSE #100
+  SetGlobal("r!KitHasDrowPic","GLOBAL",1)
+  ApplySpellRES("r!kitdrw",Myself)
+END
+
+IF
+ Global("PlayerLooksLikeDrow","GLOBAL",0)
+ Global("r!KitHasDrowPic","GLOBAL",1)
+THEN
+ RESPONSE #100
+  SetGlobal("r!KitHasDrowPic","GLOBAL",0)
+  ApplySpellRES("r!kitnrm",Myself)
+END
+
+IF
+  AreaCheck("AR2800")
+  IsValidForPartyDialogue(Myself)
+  Global("r!KitanyaHome","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitanyaHome","GLOBAL",1)
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  InParty(Myself)
+  InParty("Anomen")
+  HPLT("Anomen",10)
+  Global("KitAnomenHealth","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("KitAnomenHealth","LOCALS",1)
+    Interact("Anomen")
+END
+
+IF
+ HotKey(K)
+THEN
+ RESPONSE #100
+  StartCutScene("r!kitfix")
+END
+
+IF
+  Global("r!KitExclusiveRomance","GLOBAL",0)
+  Global("r!KitanyaRomanceActive","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitExclusiveRomance","GLOBAL",1)
+    SetGlobal("AerieRomanceActive","GLOBAL",3)
+    SetGlobal("JaheiraRomanceActive","GLOBAL",3)
+    SetGlobal("ViconiaRomanceActive","GLOBAL",3)
+END
+
+IF
+  OR(3)
+    Global("AerieRomanceActive","GLOBAL",2)
+    Global("JaheiraRomanceActive","GLOBAL",2)
+    Global("ViconiaRomanceActive","GLOBAL",2)
+  !Global("r!KitanyaRomanceActive","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitanyaRomanceActive","GLOBAL",3)
+END
+
+IF
+  Global("r!KitMatch","GLOBAL",0)
+  OR(3)
+    Race(Player1,ELF)
+    Race(Player1,HUMAN)
+    Race(Player1,HALF_ELF)
+  GlobalGT("KitLikes","GLOBAL",1)
+  Gender(Player1,MALE)
+THEN
+  RESPONSE #100
+  SetGlobal("r!KitMatch","GLOBAL",1)
+END
+
+IF
+  Global("r!KitanyaRomanceActive","GLOBAL",1)
+  GlobalGT("r!KitLoveTalk","GLOBAL",5)
+  !Global("r!KitFlirts","GLOBAL",-1)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitFlirts","GLOBAL",1)
+END
+
+IF
+  Global("r!KitanyaRomanceActive","GLOBAL",2)
+  !Global("r!KitFlirts","GLOBAL",-1)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitFlirts","GLOBAL",2)
+END
+
+IF
+  Global("r!KitFlirts","GLOBAL",1)
+  GlobalTimerExpired("r!KitFlirtTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    RealSetGlobalTimer("r!KitFlirtTimer","GLOBAL",15)
+    StartDialogueNoSet(Player1)
+END
+
+IF
+  HPLT(Player1,10)
+  Global("KitWorried","LOCALS",0)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
+
+IF
+ Global("PhaereInnuendo","GLOBAL",1)
+ OR(2)
+  Global("r!KitanyaRomanceActive","GLOBAL",1)
+  Global("r!KitanyaRomanceActive","GLOBAL",2)
+ Global("HitOnPhaere","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("HitOnPhaere","LOCALS",1)
+  StartDialogueNoSet(Player1)
+END
+
+IF
+ Global("PhaereInnuendo","GLOBAL",2)
+ OR(2)
+  Global("r!KitanyaRomanceActive","GLOBAL",1)
+  Global("r!KitanyaRomanceActive","GLOBAL",2)
+ Global("SleptWithPhaere","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("SleptWithPhaere","LOCALS",1)
+  StartDialogueNoSet(Player1)
+END
+
+IF
+ Global("PhaereInnuendo","GLOBAL",3)
+ OR(2)
+  Global("r!KitanyaRomanceActive","GLOBAL",1)
+  Global("r!KitanyaRomanceActive","GLOBAL",2)
+ Global("AvoidedPhaere","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("AvoidedPhaere","LOCALS",1)
+  StartDialogueNoSet(Player1)
+END

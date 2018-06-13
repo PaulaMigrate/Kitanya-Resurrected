@@ -1,0 +1,7 @@
+IF
+  Global("r!KitVampire","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitVampire","GLOBAL",2)
+    CreateCreature("r!kitvmp",[1473.332],2)
+END

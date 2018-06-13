@@ -1,0 +1,67 @@
+IF
+ Global("R!KitanyaSpawned","GLOBAL",0) 
+ !Global("R!KitExists","GLOBAL",1)
+ Global("R!KitJoined","GLOBAL",0)
+ XPLT(Player1,200000)
+THEN
+ RESPONSE #100
+  ActionOverride("R!Kitanya",DestroySelf())
+  SetGlobal("R!KitExists","GLOBAL",1)
+  CreateCreature("r!kit07",[864.364],14)
+Continue()
+END
+
+IF
+ Global("R!KitanyaSpawned","GLOBAL",0)
+ !Global("R!KitExists","GLOBAL",2)
+ Global("R!KitJoined","GLOBAL",0)
+ XPGT(Player1,199999)
+ XPLT(Player1,700000)
+THEN
+ RESPONSE #100
+  ActionOverride("r!Kitanya",DestroySelf())
+  SetGlobal("R!KitExists","GLOBAL",2)
+  CreateCreature("r!kit09",[864.364],14)
+Continue()
+END
+
+IF
+ Global("R!KitanyaSpawned","GLOBAL",0)
+ !Global("R!KitExists","GLOBAL",3)
+ Global("R!KitJoined","GLOBAL",0)
+ XPGT(Player1,699999)
+ XPLT(Player1,1200000)
+THEN
+ RESPONSE #100
+  ActionOverride("r!Kitanya",DestroySelf())
+  SetGlobal("R!KitExists","GLOBAL",3)
+  CreateCreature("r!kit11",[864.364],14)
+Continue()
+END
+
+IF
+ Global("R!KitanyaSpawned","GLOBAL",0)
+ !Global("R!KitExists","GLOBAL",4)
+ Global("R!KitJoined","GLOBAL",0)
+ XPGT(Player1,1119999)
+ XPLT(Player1,1750000)
+THEN
+ RESPONSE #100
+  ActionOverride("r!Kitanya",DestroySelf())
+  SetGlobal("R!KitExists","GLOBAL",4)
+  CreateCreature("r!kit13",[864.364],14)
+Continue()
+END
+
+IF
+ Global("R!KitanyaSpawned","GLOBAL",0)
+ !Global("R!KitExists","GLOBAL",5)
+ Global("R!KitJoined","GLOBAL",0)
+ XPGT(Player1,1749999)
+THEN
+ RESPONSE #100
+  ActionOverride("r!Kitanya",DestroySelf())
+  SetGlobal("R!KitExists","GLOBAL",5)
+  CreateCreature("r!kit15",[864.364],14)
+Continue()
+END

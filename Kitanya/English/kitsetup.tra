@@ -1,0 +1,134 @@
+@-1006= "Do you wish to install ["
+@0=~Kitanya Conversation/Romance Mod for BG2EE~
+@1=~Kitanya~
+@2=~When asked about her past, Kitanya becomes strangely silent, as if sadness is beginning to overcome her.  She suddenly begins to speak, softly and obviously struggling to maintain her composure.  "Know this:  my story is quite brief by elven standards and it is quite tragic.  Are you certain you want to hear this?"
+
+When you respond in the affirmative, she continues.  "I was born quite fortunate.  My parents dwelt in the heart of the elven kingdom, the great city of Suldanessalar."
+
+You can see droplets of water begin to form in her beautiful green eyes as she resumes her tale.  "It was not as idyllic as it would at first seem, however.  For, as with nearly all societies, the elvish woodlands harbor those who would become corrupt with their own power."
+
+She pauses, hesitant to continue.  This is obviously beginning to get emotional for her.  Upon witnessing your attentiveness, however, she once again begins to speak.  "When I was in what you would consider to be adolescence, the city had come under the influence of one such corrupted.  He was an incredibly powerful mage, the most powerful one we had known that did not have divine influence.  He was on a quest too, <CHARNAME>."
+
+As she begins the next portion of the story, she is on the verge of losing her composure.  Painfully, she continues, "He sought to destroy what the elvish people hold dear.  He wanted to become a god, <CHARNAME>, and he cared little for who he hurt during his acension.  A fierce battle broke out at the Tree of Life and many elves were slaughtered.  The carnage did not end there however."
+
+Her composure is gone, and she is now running on pure emotion.  It is an intriguing sensation for you.  "My family and friends were casualties in that war.  I watched all of them be cut down by the fiend's hellspawn magic."
+
+Her voice has taken on a very sharp tone, as the grim determination that you first noticed returns.  "I vowed that day to seek vengeance upon that mage and all who serve him.  I left the city, there was nothing left there for me, as even the mage had been exiled."~
+@3=~What do you need?~ [R!KITS01]
+@4=~What can I do for you?~ [R!KITS02]
+@5=~I shall endeavor to assist you.~ [R!KITS03]
+@6=~Yes?~ [R!KITS04]
+@7=~Do you need assistance?~ [R!KITS05]
+@8=~Do you have a task for me?~ [R!KITS06]
+@9=~You shall awaken in hell!~ [R!KITS07]
+@10=~Prepare to meet your gods!~ [R!KITS08]
+@11=~Your time is at an end!~ [R!KITS09]
+@12=~Our swords meet flesh today!~ [R!KITS10]
+@13=~Only one of us shall survive and it shall not be you.~ [R!KITS11]
+@14= ~Of course.~ [R!KITS12]
+@15   = ~It shall be done.~ [R!KITS13]
+@16   = ~I shall perform admirably~ [R!KITS14]
+@17   = ~Consider it done.~ [R!KITS15]
+@18   = ~A wise decision.~ [R!KITS16]
+@19   = ~I am off.~ [R!KITS17]
+@20   = ~You're the boss.~ [R!KITS18]
+@21   = ~(sigh) This so reminds me of home.~ [R!KITS19]
+@22   = ~Best stay together in this place, many dangers lie in the dark.~ [R!KITS20]
+@23   = ~Crowds breed corruption.  Let us not stay here longer than necessary.~ [R!KITS21]
+@24   = ~Ah!  There is nothing more refreshing than the hot sun upon your skin!~ [R!KITS22]
+@25   = ~Travelling by night is not my preferred method, but I suppose we have little choice...~ [R!KITS23]
+@26   = ~I did not join this group to lead, but I shall not betray your trust.~ [R!KITS24]
+@27   = ~Why are we sitting here twiddling our thumbs?  There's work to be done.~ [R!KITS25]
+@28   = ~Your actions are disturbingly dark.  Kindly return to the light.~ [R!KITS26]
+@29   = ~I shall not tolerate your actions for long.~ [R!KITS27]
+@30   = ~Your actions are truly evil.  My time here is at an end.~ [R!KITS28]
+@31   = ~I suspected that you would prove a worthy companion.~ [R!KITS29]
+@32   = ~Do you have an order?~ [R!KITS30]
+@33   = ~Your touching is inappropriate.  We only just met.~ [R!KITS31]
+@34   = ~Ow!~ [R!KITS32]
+@35   = ~I fear that I require assistance.~ [R!KITS33]
+@36   = ~Augh!  Corellian watch over me!~ [R!KITS34]
+@37   = ~Take this!~ [R!KITS35]
+@38   = ~Who oiled the hilt of my sword?~ [R!KITS36]
+@39   = ~My sword cannot scratch this thing!~ [R!KITS37]
+@40   = ~I fear that my pack is full.  Darn, it appears that something has fallen out.~ [R!KITS38]
+@41   = ~I grow fatigued.  Rest would be a welcome opportunity.~ [R!KITS39]
+@42   = ~I shall not fall here!  It is not my time!~ [R!KITS40]
+@43   = ~Elethial~
+@44   = ~Kitanya~
+@45   = ~Corellon's Chaotic Blade +3~
+@46   = ~Corellon's Chaotic Blade +3
+This powerful sword was granted as a boon to Kitanya from the elven god Corellon Larethan.  The god firmly believes in her quest, and he hoped that this sword would be of assistance.  In addition to protecting Kitanya from magical attacks, it also has the ability to strike at mages through whatever magical protections that they may be using.
+
+STATISTICS
+
+Damage:  1d8+3
+THAC0:  +3 bonus
++10% Bonus to Magic Resistance
+Wielder is immune to poison
++1 Fire Damage inflicted on each hit.
+Only Useable by:  Kitanya~
+@47   = ~Mageslayer Shield~
+@48   = ~Mageslayer Shield
+Originally fashioned by elven alchemists for use in battling the drow, this shield has a very bloody history.  Very little of it is known, however.  This shield has been wielded by many, and has been a decisive factor in many battles.  Despite all this, it still manages to retain its original luster.  How Kitanya came to be in possession of it is a mystery to you, and she does not seem to be eager to discuss it.
+
+STATISTICS
+
++3 Bonus to AC
++2 Bonus to all saves
+Only Useable by:  Kitanya~
+@49   = ~Bringer of Vengeance:  Kitanya's Plate Mail~
+@50   = ~Bringer of Vengeance:  Kitanya's Plate Mail
+This suit of armor was commissioned by Kitanya and blessed by Corellon Larethian and Rillifane.  It's tailored to her especially well, allowing maximum freedom of movement during combat.  Despite being very protective, this armor does little to detract from Kitanya's sexuality and actually proves to be quite provocative.  This could come in handy in combat situations to distract an enemy's attention.  Due to its tailored nature, it is unlikely that this armor could be used by anyone other than Kitanya.
+
+STATISTICS
+
+AC:  -1
++5% Bonus to Magic Resistance
+Wearer has permanent Free Action
+Only Useable by:  Kitanya~
+@51   = ~Kitanya's Body~
+@52   = ~Kitanya's Body
+This is the body of Kitanya.  You recovered it after being forced to kill her in the final battle with Bodhi.  She has been infected with vampirism, which you must find some way to cure if you ever wish to be with your love again.~
+@53   = ~The History of the Exile~
+@54   = ~It is rare for the elves to allow explanations of shameful events to become known to outsiders.  It is even rarer for those explanations to come from an involved elf.  The simple fact that Kitanya was willing to share this tome with you is evidence of some bond between the two of you.
+
+The book dedicates many pages to description of the events leading up to its immediate focus.  While such events may prove interesting reading, you skip over them due to lack of time.  The basis of the backstory is simply that an elf of regal standing named Jonaleth was corrupted by a family member and became obsessed with his acension to godhood.
+
+The attempt that he made cost the lives of many of the elven populace.  It took a great army to subdue him, and even then only after a great battle.  Many involved felt that Jonaleth should be put to death, but Ellesime took pity upon him.  With the assistance of the Seldarine, she stripped him of every aspect of his heritage and expelled him from the city for an indefinite period.~
+@55   = ~Ring of the Seldarine~
+@56   = ~Ring of the Seldarine
+This ring was a blessing to the elven warriors that sought to protect their realm from the insidious magics of the drow.  It increases the hardiness of its wearer to the elements and grants a slight ability to shrug off direct magical assaults.  Due to the power of the blessings on this ring, it can only be worn by a select few.
+
+STATISTICS
+
++25% Resistance to Acid
++10% Resistance to Fire
++10% Resistance to Cold
++10% Magic Damage Resistance
+Only Useable by:  Kitanya~
+@57   = ~Charm Person~
+@58   = ~Wizardslayer Bugs Fix~
+@59   = ~The Kitanya mod is already installed.~
+@60   = ~Copying a dummy file so that other mods can identify whether or not Kitanya is installed.~
+@61   = ~This component is already installed.~
+@62   = ~Wizardslayer Enhancements~
+@63   = ~This component is already installed.~
+@64   = ~WIZARD SLAYER: The Wizard Slayer is a fighter who has focused his efforts toward the destruction of spellcasters. They believe that Wizards and (to a lesser extent) Priests represent a very real danger to the community as a whole: The study of magic is very taxing on the mind, and weakened--or tempted--individuals can easily wreak a great deal of havoc and carnage before they can be contained. For this reason, strict methods of control must be put into effect, and certain guardians must be trained to overcome any rogue spellcaster. Wizard Slayers study just enough of the mystical arts to be able to defy them: They can "bend" the effects of hostile spells in order to avoid being harmed by them, they learn how to gauge a crafty Wizard's true position based on the flickering Illusions that he uses to protect himself, and they can focus their own vital energies into a disruptive force that can cause any spellcaster to lose his concentration; this spell-disrupting energy can be delivered by means of a powerful, focused shout that partially deafens the spellcaster, or via a physical blow. Of course, with all this time devoted to the study of dispatching spellcasters, Wizard Slayers have little opportunity for practicing actual combat techniques, which is what restricts a Wizard Slayer from becoming as skillful with weapons as a true Fighter could. Also, due to their loathing of enchantment and its results, they will absolutely refuse to use a wide array of magical items--although their familiarity with the arcane arts enables them to use certain items that a regular Fighter could not.
+
+ADVANTAGES:
+* Gains 2% innate Magic Resistance per level
+* Gains 1% Magic Damage Resistance per level
+* -2 bonuses to Save vs. Wands and Save vs. Spells
+* Each melee hit causes cumulative Spell Failure in the victim--starts at Level 5 with 5% per hit, with an additional 5% every 5 levels thereafter. (This is the only thing that I am not sure can be done.)
+* Can use the Thieving skill of Detect Illusions--starts at level 1 with 3%, with an additional 3% per level up to Level 20, and 2% per level thereafter.
+* Innate ability of Anti-Magic Aura, usable 1x/day for every 12 levels. All enchantments within 15 feet of the Wizard Slayer are instantly dispelled, and all creatures within that area are Deafened, suffering 50% spellcasting failure (cumulative with other forms) for 6 rounds. The Wizard Slayer is winded (+2 penalties to THAC0, Armor Class, and Saving Throws) for the same duration after using this ability.
+
+DISADVANTAGES:
+* +1 penalty to THAC0 every 5 levels (stops at Level 20)
+* Cannot wear magical Rings, Amulets, Gauntlets, Girdles, Cloaks, or Boots, except those that would be most useful when used against spellcasters
+* Cannot use ANY items that cast spells, unless those items or spells are Anti-Spellcaster in nature
+* +1 penalties to Save vs. Death, Save vs. Polymorph, & Save vs. Breath Weapon
+* Limited to Mastery (***) in any weapon
+* Limited to Proficiency (*) in any weapon style~
+

@@ -1,0 +1,21 @@
+IF
+InParty("r!Kitanya")
+See("r!Kitanya")
+Global("r!AnomenDefendKit","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("r!AnomenDefendKit","LOCALS",1)
+Interact("r!Kitanya")
+END
+
+IF
+InParty("r!Kitanya")
+See("r!Kitanya")
+!StateCheck("r!Kitanya",STATE_SLEEPING)
+Global("r!KitHasDrowPic","GLOBAL",1)
+Global("r!FlirtWithDrowKitanya","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("r!FlirtWithDrowKitanya","LOCALS",1)
+StartDialogueNoSet("r!Kitanya")
+END

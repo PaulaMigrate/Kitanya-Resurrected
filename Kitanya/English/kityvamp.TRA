@@ -1,0 +1,67 @@
+@0    = ~You will return Kitanya before I shove this holy water down your arrogant throat!~
+@1    = ~You're truly the coward.  You realize that you cannot win in a real fight, so you rely on sentiment to attempt to throw me off my guard.  Return Kitanya and perhaps I'll decide not to chop you into little pieces before staking you.~
+@2    = ~Yet, here she stands.  The girl is loyal to a fault, <CHARNAME>.~
+@3    = ~Tell him, my child.  Who do you serve?~
+@4    = ~(you are struck by the deep glowing red of her eyes, white skin, and long fangs) It- is as you say mistress.~
+@5    = ~There, that wasn't so hard, was it?  You see, <CHARNAME>, you cannot defeat me.~
+@6    = ~So you got yourself another vampire.  They aren't that hard to kill, bitch.~
+@7    = ~You are sorely mistaken.  The end of this should be clear by now, Bodhi.  I strike you down.~
+@8    = ~I must admit, <CHARNAME>, you are awfully arrogant.  You would believe that my newest child is a typical vampire.~
+@9    = ~I assure you, you are mistaken.~
+@10   = ~Her transformation was quite strange.  She has gained more power than even I care to admit.~
+@11   = ~The Final Battle with Bodhi.
+
+Bodhi has turned Kitanya into a vampire!  Or... or very nearly.  The process may not have been completed in the short time Bodhi has had her.  Hopefully something can be done or I will have lost her.  Perhaps the elven war sage might know some way of restoration... or Elhan... ~
+@12   = ~Bodhi speaks the truth.  The best decision you could make would be to leave, <CHARNAME>.~
+@13   = ~And so it shall end here.  Welcome.  You have been very resourceful in finding me, although I did not go out of my way to hide.~ [BODHIX39]
+@14   = ~I think not, <CHARNAME>.  Solaufein has progressed as a vampire with unheralded celerity.  Already he commands more unliving power than all but most ancient among us.  Truth be told, he's developing into something more like a Lich than a pure vampire ...~
+@15   = ~Hush now, my Solaufein.  I'm sure <CHARNAME> wants to get back to blustering about and threatening us.~
+@16   = ~You have been nothing but a thorn in the way for too long, Bodhi.  Return both Kitanya and Solaufein, and I won't chop you up into pieces.~
+@17   = ~Do you enjoy the taste of holy water, Bodhi?  You'll be drinking it if you do not return both Kitanya and Solaufein.~
+@18   = ~No!  I will not stand for this!  First Lavok and now Solaufein.  Must everyone with magical power be turned into a slavering undead mockery bent only on destruction?  Is nothing sacred?~
+@19   = ~Bodhi, I thought I hated you and your kind before.  But now the spite in my heart burns like conflagration.  You will not survive and neither will this puppet you have created from Solaufein's skin.~
+@20   = ~Be that as it may, Solaufein is still quite exciting. It's unfortunate that the moon seems to burn him as much as the sun, but his newfound favor with Lolth more than makes up for it.~
+@21   = ~Hello again, <CHARNAME>.  It's amazing what Unlife does for my perspective.  Clarity and focus.  All my life, I've had doubts about who I am, where I belong.  Now, I'm like the arrow that springs from the bow.  No hesitation, no doubts.  The path is clear.~
+@22   = ~Indulge me in one final bit of poetry, if you will.  My views on you have ... shifted ... slightly. 
+
+Favour my solemn song, for I have loved
+Thee ever, and thee only; I have watched
+Thy shadow, and the darkness of thy steps,
+And my heart ever gazes on the depths~
+@23   = ~Of thy deep mysteries.  I have made my bed
+In charnels and on coffins, where black death
+Keeps record of the trophies won from thee,
+Hoping to still these obstinate questionings
+
+Of thee and thine, by forcing some lone ghost
+Thy messenger, to render up the tale
+Of what we are. In lone and silent hours,
+When night makes a weird sound of its own stillness,~
+@24   = ~Like an inspired and desperate alchymist
+Stalking his very life on some dark hope,
+Have I mixed awful talk and asking looks
+With my most innocent love, until strange tears
+
+Uniting with those breathless kiss, made
+Such magic as compels the charmèd night
+To render up thy charge ...~
+@25   = ~Yes, my friend.  I find that I love you ... to death.  Welcome back to the abyss, <CHARNAME>.  Your timing, as always, is quite exceptional.  Just in time to die.~
+@26   = ~What are you doing, Solaufein?~
+@27   = ~You're not Solaufein! You're nothing but a shadow.~
+@28   = ~What I am doing is what someone should have done a long time ago.  Putting you out of *my* misery.  A fitting punishment for your crimes against my mistress Lolth.~
+@29   = ~I had a dream about us, <CHARNAME>. In that moment between life and death, when Bodhi sank her fangs into me and drained my lifeblood. Just before she started feeding me from her own veins, I saw Eilistraee.~
+@30   = ~I never realized how small she was before.  Pity.~
+@31   = ~At any rate, she walked past me into the sunrise.  I, of course, had turned away from its glare.  But as she brushed by my shoulder, she whispered in my ear.~
+@32   = ~She said that we are both damned.  Startled, I turned toward her and saw your face instead.  Banishing the both of you from my thoughts, I found acceptance with Lolth.  She rejoices in my new ... position ... in the world.~
+@33   = ~Blood calls out for blood, but it is a small price to pay for immortality.~
+@34   = ~It's all so brief, isn't it?  The typical Drow life span is almost a thousand years, but it's barely a second compared to what's out there.  It would not be so bad if life didn't take so long to figure out.  It seems you just start to get it right and then ... it's over.~
+@35   = ~I used to dream of escaping the darkness.  Now I yearn to pull it around me like a cloak.  Let us dance in the shadows, <CHARNAME>.  The dead shall drink of your blood!~
+@36   = ~Well, perhaps you should watch out. Shadows move when you are not looking at them.~
+@37 = ~I had a dream about us, <CHARNAME>. In that moment between life and death, when Bodhi sank her fangs into me and drained my lifeblood. Just before she started feeding me from her own veins, I saw Eilistraee.~
+@38 = ~I never realized how small she was before. Pity.~
+@39 = ~At any rate, she walked past me into the sunrise. I, of course, had turned away from its glare. But as she brushed by my shoulder, she whispered in my ear.~
+@40 = ~She said that we are both damned. Startled, I turned toward her and saw your face instead. Banishing the both of you from my thoughts, I found acceptance with Lolth. She rejoices in my new ... position ... in the world.~
+@41 = ~Blood calls out for blood, but it is a small price to pay for immortality.~
+@42 = ~It's all so brief, isn't it? The typical Drow life span is almost a thousand years, but it's barely a second compared to what's out there. It would not be so bad if life didn't take so long to figure out. It seems you just start to get it right and then ... it's over.~
+@43 = ~I used to dream of escaping the darkness. Now I yearn to pull it around me like a cloak. Let us dance in the shadows, <CHARNAME>. The dead shall drink of your blood!~
+

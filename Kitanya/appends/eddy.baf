@@ -1,0 +1,11 @@
+IF
+ InParty("r!Kitanya")
+ See("r!Kitanya")
+ !StateCheck("r!Kitanya",STATE_SLEEPING)
+ Global("r!KitHasDrowPic","GLOBAL",1)
+ Global("r!FlirtWithDrowKitanya","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("r!FlirtWithDrowKitanya","LOCALS",1)
+  StartDialogueNoSet("r!Kitanya")
+END

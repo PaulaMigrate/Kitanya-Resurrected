@@ -1,0 +1,10 @@
+IF
+PartyHasItem("r!kitbdy")
+!Global("r!KitVampire","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("r!KitVampire","GLOBAL",4)
+Continue()
+END
+
+

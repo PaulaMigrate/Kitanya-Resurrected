@@ -1,0 +1,88 @@
+IF
+  Global("C6BodhiFight","AR0809",1)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    SetGlobal("r!KitVampire","GLOBAL",3)
+    DropInventory()
+    DestroySelf()
+END
+
+IF
+  See([PC])
+  Delay(12)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ReallyForceSpellDead([PC],VAMPIRE_DOMINATION)
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ Global("Domination","LOCALS",0)
+THEN
+ RESPONSE #100
+  SetGlobal("Domination","LOCALS",1)
+  ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DIRE_CHARM)
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",NearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",NearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(NearestEnemyOf(Myself))
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",SecondNearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",SecondNearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(SecondNearestEnemyOf(Myself))
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",ThirdNearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",ThirdNearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(ThirdNearestEnemyOf(Myself))
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",FourthNearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",FourthNearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(FourthNearestEnemyOf(Myself))
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",FifthNearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",FifthNearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(FifthNearestEnemyOf(Myself))
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ !HasItemEquiped("AMUL21",SixthNearestEnemyOf(Myself))
+ !HasItemEquiped("BLUN25",SixthNearestEnemyOf(Myself))
+THEN
+ RESPONSE #100
+  Attack(SixthNearestEnemyOf(Myself))
+END

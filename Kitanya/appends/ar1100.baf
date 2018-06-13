@@ -1,0 +1,7 @@
+IF
+ !Global("R!KitanyaSpawned","GLOBAL",0)
+THEN
+ RESPONSE #100
+  SetGlobal("R!KitanyaSpawned","GLOBAL",1)
+  Continue()
+END

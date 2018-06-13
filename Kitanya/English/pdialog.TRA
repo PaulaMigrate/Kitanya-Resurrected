@@ -1,0 +1,56 @@
+@0=~The Final Battle with Bodhi.
+
+Bodhi has turned Kitanya into a vampire!  Or... or very nearly.  The process may not have been completed in the short time Bodhi has had her.  Hopefully something can be done or I will have lost her.  Perhaps the elven war sage might know some way of restoration... or Elhan... ~
+@1=~The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Kitanya.  Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible.  I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!~
+@2    = ~It is not my desire that we should part ways.  There is much to be accomplished still.  Are you certain you wish to end our pairing?~ [R!KITP01]
+@3    = ~Sorry, Kitanya, but there just isn't any use for you right now.~
+@4    = ~Perhaps I was a bit hasty.  I don't want you to go.  Please remain with us.~
+@5    = ~I shall not wait forever for you to change your mind, <CHARNAME>, but where would you like to meet up when it is time for us to journey together again?~
+@6    = ~Go to the Copper Coronet.  We shall meet up there if we are to journey together again.~
+@7    = ~This comes as a true surprise, my love.  I had always thought that when two people truly care about each other that they should be together.~
+@8    = ~If this is truly what you want, then I shall not object but should we meet later... things will not be the same between us.~
+@9    = ~I'm sorry, Kitanya.  This is as hard on me as it is on you, but it is necessary.~
+@10   = ~Of course I don't want you to leave.  Please remain by my side.~
+@11   = ~I am- surprised at your decision, <CHARNAME>.  I had thought that there was a good thing developing between us.  (she looks at you pleadingly) Please tell me that this is some horrific mistake.~
+@12   = ~No mistake.  Goodbye, Kitanya.~
+@13   = ~Yes, it was my attempt at bad humor.  Please remain with the group.~
+@14   = ~<CHARNAME>!  It was horrible!  Not having control over your own actions... being relegated down do little more than an animal- I am glad to lay eyes on you once again.~
+@15   = ~And I am delighted to see your beautiful face once again.  Let us never be parted again.~
+@16   = ~Bodhi's Curse
+
+There was a time when I thought that I had forever lost Kitanya to the darkness of Bodhi's embrace.  I am pleased to discover that that was not the case.  I have both revived her and returned her to her original condition.  She seems to be quite grateful.~
+@17   = ~Yeah, yeah- Save me the sappy stuff.  I saved you, but that's all I'm going to do.~
+@18   = ~I- I'm sorry, Kitanya, but there's no room for you to rejoin us right now.  I am sorry.~
+@19   = ~I don't want to leave your presence <CHARNAME>, but if you truly desire to part ways... well, I love you enough to give you your space.~
+@20   = ~I doubt that things shall remain the same between us, however.~
+@21   = ~Perhaps I was a bit hasty.  I do want you by my side as well.~
+@22   = ~It is my wish.  Sorry, Kitanya.~
+@23   = ~You have no room?  Well, <CHARNAME>, if you desire your new companion's *traits* more than mine, then I suppose that is your perogative.  Should we part ways, however, I doubt that things shall be the same between us.~
+@24   = ~Perhaps I was a bit hasty.  I don't want you to leave.~
+@25   = ~Goodbye, Kitanya.  Unfortunately, a warrior is easily replaced.~
+@26   = ~Thank you, <CHARNAME>.  May Corellian take those evildoers who oppose us!~
+@27   = ~(You see Kitanya.  As you approach, you notice that she is not exactly greeting you with open arms.  In fact, you can almost see an air of suspicion in her eyes)~
+@28   = ~You return.  What brings you here?~ [R!KITP02]
+@29   = ~I need your help.~
+@30   = ~I had some questions.~
+@31   = ~Just checking to make sure you're still alive.  Goodbye now.~
+@32   = ~Very well.  Ask your questions.~
+@33   = ~Will you rejoin the party?~
+@34   = ~Anything of interest going on lately?~
+@35   = ~Have you heard anything more onto the location of the Cowled Wizard prison?~
+@36   = ~That's all I've got.  Goodbye.~
+@37   = ~I accept your offer, <CHARNAME>.  I did miss travelling with someone so pleasant.~
+@38   = ~I do not think that would be wise, <CHARNAME>.  You have a tendency to not appreciate those that you travel with and I shall not subject myself to that treatment again.~
+@39   = ~Although, I do wish you luck on your future travels.~
+@40   = ~No.  The Copper Coronet is the local establishment for the socializing of those too foolish or stubborn to seek out a new establishment.  I am convinced that this is the location where one seeking the source of human corruption should start the search.~
+@41   = ~Very well then.  I had some other questions.~
+@42   = ~Oookay.  You've obviously lost your mind.  Goodbye.~
+@43   = ~I'm afraid not.  The Cowled Wizards are a fearsome organization, <CHARNAME>, and few here wish to know anything about them.~
+@44   = ~I'm sorry to hear that.  I had some other questions.~
+@45   = ~Thanks for the info.  I'll continue my search elsewhere.~
+@46   = ~How so?~
+@47   = ~I would like you to rejoin the party.~
+@48   = ~I need you to answer some questions.~
+@49   = ~On second thought, nevermind.  I'll see you later.~
