@@ -132,21 +132,26 @@ COPY ~Kitanya/items/r!kitrng.itm~ ~override~
 
 COPY ~Kitanya/items/kitvswr1.itm~ ~override~
 
-EXTEND_TOP ~AR1105.bcs~ ~Kitanya/appends/kitspawn.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR1105.bcs~ ~Kitanya/appends/kitspawn.baf~
+ EVALUATE_BUFFER
 
-EXTEND_TOP ~Anomen.bcs~ ~Kitanya/appends/anoscript.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~Anomen.bcs~ ~Kitanya/appends/anoscript.baf~
+ EVALUATE_BUFFER
 
-EXTEND_BOTTOM ~AR0406.bcs~ ~Kitanya/appends/AR0406.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~cleanse.bcs~ ~Kitanya/appends/revive.baf~ 
+ EVALUATE_BUFFER
 
-EXTEND_TOP ~cleanse.bcs~ ~Kitanya/appends/revive.baf~  EVALUATE_BUFFER
+EXTEND_TOP ~AR0809.bcs~ ~Kitanya/appends/AR0809.baf~
+ EVALUATE_BUFFER
 
-EXTEND_TOP ~AR0809.bcs~ ~Kitanya/appends/AR0809.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~baldur.bcs~ ~Kitanya/appends/kbaldur.baf~
+ EVALUATE_BUFFER
 
-EXTEND_TOP ~baldur.bcs~ ~Kitanya/appends/kbaldur.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~edwin.bcs~ ~Kitanya/appends/eddy.baf~
+ EVALUATE_BUFFER
 
-EXTEND_TOP ~edwin.bcs~ ~Kitanya/appends/eddy.baf~ EVALUATE_BUFFER
-
-EXTEND_TOP ~AR1100.bcs~ ~Kitanya/appends/ar1100.baf~ EVALUATE_BUFFER
+EXTEND_TOP ~AR1100.bcs~ ~Kitanya/appends/ar1100.baf~
+ EVALUATE_BUFFER
 
 COMPILE EVALUATE_BUFFER ~Kitanya/scripts~
 
