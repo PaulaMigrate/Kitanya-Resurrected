@@ -1,8 +1,0 @@
-IF
- Global("KitAtCoronet","GLOBAL",1)
- Global("KitanyaExists","AR0406",0)
-THEN
- RESPONSE #100
-  SetGlobal("KitanyaExists","AR0406",1)
-  CreateCreature("Kitanya01",[1200.1350],4)
-END
