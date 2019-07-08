@@ -416,8 +416,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 5 r#KitDrizztFight
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT C6DRIZZ1 7 r#KitDrizztFriend
@@ -437,8 +437,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 9 r#KitDrizztFight2
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 18 r#KitDrizztFight3
@@ -446,8 +446,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 18 r#KitDrizztFight3
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT_COPY_TRANS2 C6DRIZZ1 37 r#KitDrizztJoined
@@ -462,8 +462,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 41 r#KitDrizztFight4
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 48 r#KitDrizztFight5
@@ -471,8 +471,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 48 r#KitDrizztFight5
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 55 r#KitDrizztFight6
@@ -480,8 +480,8 @@ INTERJECT_COPY_TRANS C6DRIZZ1 55 r#KitDrizztFight6
 		 See("R#Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
-DO ~ActionOverride("R#Kitanya",LeaveParty())
-    ActionOverride("R#Kitanya",EscapeArea())~
+DO ~ActionOverride("R!Kitanya",LeaveParty())
+    ActionOverride("R!Kitanya",EscapeArea())~
 END
 
 INTERJECT_COPY_TRANS LYROS 16 r#KitXzarOpinion
@@ -695,9 +695,9 @@ EXTEND_BOTTOM SUDEMIN 40
       See("R#Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Dead("R!Kitanya")~ THEN DO ~Enemy()
-				  ActionOverride("R#Kitanya",LeaveParty())
-				  ActionOverride("R#Kitanya",Enemy())
-				  ActionOverride("R#Kitanya",Attack(Player1))~ EXTERN R#KITYJ PCAttackedDemin
+				  ActionOverride("R!Kitanya",LeaveParty())
+				  ActionOverride("R!Kitanya",Enemy())
+				  ActionOverride("R!Kitanya",Attack(Player1))~ EXTERN R#KITYJ PCAttackedDemin
 END
 
 INTERJECT_COPY_TRANS SUDEMIN 45 r#AcceptedQuest
