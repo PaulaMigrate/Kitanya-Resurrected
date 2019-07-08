@@ -2,14 +2,14 @@ BEGIN ~R#KITELE~
 
 IF WEIGHT #1 ~NumTimesTalkedTo(0)
               OR(2)
-		!InParty("R#Kitanya")
-		!IsValidForPartyDialogue("R#Kitanya")~ THEN BEGIN PlayerFight
+		!InParty("R!Kitanya")
+		!IsValidForPartyDialogue("R!Kitanya")~ THEN BEGIN PlayerFight
   SAY @0 = @1
   IF ~~ THEN DO ~Enemy()~ EXIT
 END
 
 CHAIN
-  IF WEIGHT #0 ~IsValidForPartyDialogue("R#Kitanya")
+  IF WEIGHT #0 ~IsValidForPartyDialogue("R!Kitanya")
                 Global("TalkedToKit","LOCALS",0)~ THEN R#KITELE KitanyaStartChain @2
   DO ~SetGlobal("TalkedToKit","LOCALS",1)~
   == R#KITYJ @3

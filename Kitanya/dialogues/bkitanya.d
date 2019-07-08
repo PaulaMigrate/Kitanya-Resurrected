@@ -528,9 +528,9 @@ CHAIN
 EXIT
 
 CHAIN
-   IF ~InParty("R#Kitanya")
-       See("R#Kitanya")
-       !StateCheck("R#Kitanya",STATE_SLEEPING)
+   IF ~InParty("R!Kitanya")
+       See("R!Kitanya")
+       !StateCheck("R!Kitanya",STATE_SLEEPING)
        CombatCounter(0)
        Global("R#YoshKitHome","LOCALS",0)~ THEN BYOSHIM YoshKitHomeChain @244
 DO ~SetGlobal("R#YoshKitHome","LOCALS",1)~
@@ -543,9 +543,9 @@ DO ~SetGlobal("R#YoshKitHome","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#YoshNoticeKit","GLOBAL",0)~ THEN BYOSHIM YoshNoticingKitChain @251
 DO ~SetGlobal("R#YoshNoticeKit","GLOBAL",1)~
@@ -563,9 +563,9 @@ DO ~SetGlobal("R#YoshNoticeKit","GLOBAL",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitVicJealous","LOCALS",0)~ THEN BVICONI KitJealousChain @267
 DO ~SetGlobal("R#KitVicJealous","LOCALS",1)~
@@ -580,9 +580,9 @@ DO ~SetGlobal("R#KitVicJealous","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitMinscFightTalk","LOCALS",0)~ THEN BMINSC KitAfterFightChain @277
 DO ~SetGlobal("R#KitMinscFightTalk","LOCALS",1)~
@@ -595,9 +595,9 @@ DO ~SetGlobal("R#KitMinscFightTalk","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitMinscHate","LOCALS",0)~ THEN BMINSC WhyHateDynaChain @285
 DO ~SetGlobal("R#KitMinscHate","LOCALS",1)~
@@ -612,9 +612,9 @@ DO ~SetGlobal("R#KitMinscHate","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitMinscRep","LOCALS",0)~ THEN BMINSC KitMinscGoodnessChain @295
 DO ~SetGlobal("R#KitMinscRep","LOCALS",1)~
@@ -626,8 +626,8 @@ DO ~SetGlobal("R#KitMinscRep","LOCALS",1)~
 EXIT
 
 CHAIN
-   IF ~InParty("R#Kitanya")
-       See("R#Kitanya")
+   IF ~InParty("R!Kitanya")
+       See("R!Kitanya")
        StateCheck("R#Kitanya",STATE_SLEEPING)
        CombatCounter(0)
        Global("R#KitMazzyUmar","LOCALS",0)~ THEN BMAZZY KitMazUmarChain @302
@@ -643,9 +643,9 @@ DO ~SetGlobal("R#KitMazzyUmar","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitKorganFlirt","LOCALS",0)~ THEN BKORGAN KitFlirtChain @313
 DO ~SetGlobal("R#KitKorganFlirt","LOCALS",1)~
@@ -659,9 +659,9 @@ DO ~SetGlobal("R#KitKorganFlirt","LOCALS",1)~
 EXIT
 
 CHAIN
-   IF ~InParty("R#Kitanya")
-       See("R#Kitanya")
-       !StateCheck("R#Kitanya",STATE_SLEEPING)
+   IF ~InParty("R!Kitanya")
+       See("R!Kitanya")
+       !StateCheck("R!Kitanya",STATE_SLEEPING)
        CombatCounter(0)
        Global("R#KitJanStorytime","LOCALS",0)~ THEN BJAN KitOrcChain @321
 DO ~SetGlobal("R#KitJanStorytime","LOCALS",1)~
@@ -677,9 +677,9 @@ DO ~SetGlobal("R#KitJanStorytime","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitJanRelate","LOCALS",0)~ THEN BJAN KitJanRelateChain @331
 DO ~SetGlobal("R#KitJanRelate","LOCALS",1)~
@@ -715,7 +715,7 @@ IF ~See(Player1)
   ++ @350 + RefuseStory
   ++ @351 + TellStory
   + ~InParty("Imoen2")~ + @352  EXTERN IMOEN2J JanAnnoyImmyChain
-  + ~InParty("R#Kitanya")~ + @353  EXTERN R#KITYB  JanGooberKitChain
+  + ~InParty("R!Kitanya")~ + @353  EXTERN R#KITYB  JanGooberKitChain
 END
 
 IF ~~ THEN BEGIN RefuseStory
@@ -818,9 +818,9 @@ END
 END // of APPEND
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitJanTimeForStory","LOCALS",0)~ THEN BJAN KitTellAStoryChain @404
 DO ~SetGlobal("R#KitJanTimeForStory","LOCALS",1)~
@@ -838,11 +838,11 @@ DO ~SetGlobal("R#KitJanTimeForStory","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
       GlobalGT("Chapter","GLOBAL",%bg2_chapter_4%)
       CombatCounter(0)
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       Global("R#KitJahContemplate","LOCALS",0)~ THEN BJAHEIR KitJahContemplateChain @413
 DO ~SetGlobal("R#KitJahContemplate","LOCALS",1)~
   == R#KITYB  @414
@@ -855,9 +855,9 @@ DO ~SetGlobal("R#KitJahContemplate","LOCALS",1)~
 EXIT
 
 CHAIN
-   IF ~InParty("R#Kitanya")
-       See("R#Kitanya")
-       !StateCheck("R#Kitanya",STATE_SLEEPING)
+   IF ~InParty("R!Kitanya")
+       See("R!Kitanya")
+       !StateCheck("R!Kitanya",STATE_SLEEPING)
        CombatCounter(0)
        Global("R#KitEdwinWar","LOCALS",0)~ THEN BEDWIN KitEdwinWarChain @424
 DO ~SetGlobal("R#KitEdwinWar","LOCALS",1)~
@@ -866,9 +866,9 @@ DO ~SetGlobal("R#KitEdwinWar","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitEdwinFlirt","LOCALS",0)~ THEN BEDWIN KitEdwinFlirtChain @427
 DO ~SetGlobal("R#KitEdwinFlirt","LOCALS",1)~
@@ -889,10 +889,10 @@ CHAIN BEDWIN JanFemaleChain
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
       CombatCounter(0)
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       Global("R#CerndEnvyKit","LOCALS",0)~ THEN BCERND CerndEnviesKitChain @440
 DO ~SetGlobal("R#CerndEnvyKit","LOCALS",1)~
   == R#KITYB  @441
@@ -910,9 +910,9 @@ DO ~SetGlobal("R#CerndEnvyKit","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitCerndNature","LOCALS",0)
       AreaType(FOREST)~ THEN BCERND KitNatureChain @453
@@ -941,10 +941,10 @@ DO ~SetGlobal("R#KitCerndNature","LOCALS",1)~
 EXIT
 
 CHAIN
- IF WEIGHT #-999 ~InParty("R#Kitanya")
-                  See("R#Kitanya")
+ IF WEIGHT #-999 ~InParty("R!Kitanya")
+                  See("R!Kitanya")
                   CombatCounter(0)
- 	          !StateCheck("R#Kitanya",STATE_SLEEPING)
+ 	          !StateCheck("R!Kitanya",STATE_SLEEPING)
  		  Global("R#AnomenDefendKitanya","LOCALS",0)~ THEN BANOMEN AnomenKitDefendChain @475
 DO ~SetGlobal("R#AnomenDefendKitanya","LOCALS",1)~
    == R#KITYB  @476
@@ -955,9 +955,9 @@ DO ~SetGlobal("R#AnomenDefendKitanya","LOCALS",1)~
 EXIT
 
 CHAIN
- IF ~InParty("R#Kitanya")
-     See("R#Kitanya")
-     !StateCheck("R#Kitanya",STATE_SLEEPING)
+ IF ~InParty("R!Kitanya")
+     See("R!Kitanya")
+     !StateCheck("R!Kitanya",STATE_SLEEPING)
      !Global("AnomenRomanceActive","GLOBAL",2)
      CombatCounter(0)
      Global("R#AnomenKitFlirt","LOCALS",0)~ THEN BANOMEN AnomenFlirtKitChain @481
@@ -970,9 +970,9 @@ DO ~SetGlobal("R#AnomenKitFlirt","LOCALS",1)~
 EXIT
 
 CHAIN
- IF ~InParty("R#Kitanya")
-     See("R#Kitanya")
-     !StateCheck("R#Kitanya",STATE_SLEEPING)
+ IF ~InParty("R!Kitanya")
+     See("R!Kitanya")
+     !StateCheck("R!Kitanya",STATE_SLEEPING)
      CombatCounter(0)
      !Global("AnomenRomanceActive","GLOBAL",2)
      Global("R#AnomenKitFlirt2","LOCALS",0)~ THEN BANOMEN AnomenFlirt2Chain @487
@@ -987,9 +987,9 @@ DO ~SetGlobal("R#AnomenKitFlirt2","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Global("AnomenRomanceActive","GLOBAL",2)
       CombatCounter(0)
       Global("R#KitAnomenFlirt3","LOCALS",0)~ THEN BANOMEN AnomenFlirt3Chain @498
@@ -1004,9 +1004,9 @@ CHAIN BANOMEN AnoPissJanChain @502
 END BJAN WantToContinue
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       !Global("AnomenRomanceActive","GLOBAL",2)
       Global("R#KitAnomenFlirt4","LOCALS",0)~ THEN BANOMEN AnomenFlirt4Chain @504
@@ -1019,9 +1019,9 @@ DO ~DisplayString("R#Kitanya",999999)
 EXIT
 
 CHAIN
- IF ~InParty("R#Kitanya")
-     See("R#Kitanya")
-     !StateCheck("R#Kitanya",STATE_SLEEPING)
+ IF ~InParty("R!Kitanya")
+     See("R!Kitanya")
+     !StateCheck("R!Kitanya",STATE_SLEEPING)
      CombatCounter(0)
      Global("R#KitAerieInsecure","LOCALS",0)~ THEN BAERIE KitComfortChain @509
 DO ~SetGlobal("R#KitAerieInsecure","LOCALS",1)~
@@ -1045,9 +1045,9 @@ END
 END
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Global("AerieRomanceActive","GLOBAL",3)
       !Global("AerieRomanceActive","GLOBAL",0)
       GlobalGT("LoveTalk","LOCALS",38)
@@ -1067,9 +1067,9 @@ DO ~SetGlobal("R#KitAerieLove","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitAerieFight","LOCALS",0)~ THEN BAERIE KitFightChain @532
 DO ~SetGlobal("R#KitAerieFight","LOCALS",1)~
@@ -1082,9 +1082,9 @@ DO ~SetGlobal("R#KitAerieFight","LOCALS",1)~
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitVicNookie","LOCALS",0)~ THEN BVICONI KitSexTalkChain @539
   DO ~SetGlobal("R#KitVicNookie","LOCALS",1)~
@@ -1097,9 +1097,9 @@ CHAIN
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitKorganInsult","LOCALS",0)~ THEN BKORGAN KorganKitInsultDejaChain @547
   == BANOMEN IF ~IsValidForPartyDialogue("Anomen")~ THEN @548
@@ -1112,9 +1112,9 @@ CHAIN
 EXIT
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitJanTurnips","LOCALS",0)~ THEN BJAN KitTurnipChain @556
   DO ~SetGlobal("R#KitJanTurnips","LOCALS",1)~
@@ -1152,9 +1152,9 @@ END
 END
 
 CHAIN
-  IF ~InParty("R#Kitanya")
-      See("R#Kitanya")
-      !StateCheck("R#Kitanya",STATE_SLEEPING)
+  IF ~InParty("R!Kitanya")
+      See("R!Kitanya")
+      !StateCheck("R!Kitanya",STATE_SLEEPING)
       CombatCounter(0)
       Global("R#KitKeldornFamily","LOCALS",0)~ THEN BKELDOR KitFamilyTalkChain @576
   DO ~SetGlobal("R#KitKeldornFamily","LOCALS",1)~
