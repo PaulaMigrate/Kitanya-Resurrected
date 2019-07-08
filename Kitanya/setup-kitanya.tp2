@@ -173,23 +173,23 @@ ADD_JOURNAL @16 USING ~Kitanya/%s/pdialog.TRA~
 
 
 APPEND ~pdialog.2da~
-~R#Kitanya     R#kityP     R#kityJ     KitanyaD~
-UNLESS ~R#Kitanya~
+~R!Kitanya     R#kityP     R#kityJ     KitanyaD~
+UNLESS ~R!Kitanya~
 UNLESS ~25POST~
 
 APPEND ~pdialog.2da~
-~R#Kitanya     R#kityP     R#kityJ     kitanyaD     R#KIT25P     R#KIT25J     KitanyaD~
-UNLESS ~R#Kitanya~
+~R!Kitanya     R#kityP     R#kityJ     kitanyaD     R#KIT25P     R#KIT25J     KitanyaD~
+UNLESS ~R!Kitanya~
 IF ~25POST~
 
 APPEND ~interdia.2da~
-~R#Kitanya     R#kityB~
-UNLESS ~R#Kitanya~
+~R!Kitanya     R#kityB~
+UNLESS ~R!Kitanya~
 UNLESS ~25FILE~
 
 APPEND ~interdia.2da~
-~R#Kitanya     R#kityB     R#KIT25B~
-UNLESS ~R#Kitanya~
+~R!Kitanya     R#kityB     R#KIT25B~
+UNLESS ~R!Kitanya~
 IF ~25FILE~
 
 
