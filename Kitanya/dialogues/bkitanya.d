@@ -1014,7 +1014,7 @@ DO ~SetGlobal("R#KitAnomenFlirt4","LOCALS",1)~
   == R#KITYB  @505
   == BANOMEN @506
   == R#KITYB  @507 = @508
-DO ~DisplayString("R#Kitanya",999999)
+DO ~DisplayString("R!Kitanya",999999)
     CallLightning("Anomen")~
 EXIT
 
