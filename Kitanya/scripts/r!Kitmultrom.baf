@@ -1,0 +1,6 @@
+IF
+Global("r!KitExclusiveRomance","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("r!KitExclusiveRomance","GLOBAL",2)
+END

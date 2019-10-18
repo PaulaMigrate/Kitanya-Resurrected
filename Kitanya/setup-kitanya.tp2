@@ -2,7 +2,7 @@ BACKUP ~Kitanya/backup~
 //AUTHOR ~rastor@rpgdungeon.net~
 SUPPORT ~PaulaMigrate@mail.com~
 
-VERSION ~v7.0~
+VERSION ~v7.1~
 
 AUTO_TRA ~Kitanya/%s~
 
@@ -192,4 +192,5 @@ APPEND ~interdia.2da~
 UNLESS ~R!Kitanya~
 IF ~25FILE~
 
-
+BEGIN @65
+EXTEND_TOP ~r!kitmn.bcs~ ~Kitanya/scripts/r!Kitmultrom.baf~

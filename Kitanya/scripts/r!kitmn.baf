@@ -64,6 +64,7 @@ THEN
 END
 
 IF
+!Global("r!KitExclusiveRomance","GLOBAL",2)
   OR(3)
     Global("AerieRomanceActive","GLOBAL",2)
     Global("JaheiraRomanceActive","GLOBAL",2)
