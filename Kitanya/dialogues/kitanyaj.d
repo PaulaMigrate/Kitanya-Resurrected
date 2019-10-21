@@ -11,11 +11,8 @@ END
 
 IF WEIGHT #1 ~Global("PhaereInnuendo","GLOBAL",2)
               OR(2)
-	       Global("R#KitanyaRomanceActive","GLOBAL",2)
-	       Global("R#KitanyaRomanceActive","GLOBAL",1)
-	      InParty("R!Kitanya")
-	      !Dead("R!Kitanya")
-	      !StateCheck("R!Kitanya",STATE_SLEEPING)
+	       Global("R!KitanyaRomanceActive","GLOBAL",2)
+	       Global("R!KitanyaRomanceActive","GLOBAL",1)
 	      Global("PCShaggedPhaere","LOCALS",0)~ THEN BEGIN PCShaggedPhaere
   SAY @3
   ++@4 DO ~SetGlobal("PCShaggedPhaere","LOCALS",1)~ +PCShaggedPhaere1
@@ -34,11 +31,8 @@ END
 
 IF WEIGHT #2 ~Global("PhaereInnuendo","GLOBAL",3)
 	      OR(2)
-		Global("R#KitanyaRomanceActive","GLOBAL",2)
-		Global("R#KitanyaRomanceActive","GLOBAL",1)
-	      InParty("R!Kitanya")
-	      !Dead("R!Kitanya")
-	      !StateCheck("R!Kitanya",STATE_SLEEPING)
+		Global("R!KitanyaRomanceActive","GLOBAL",2)
+		Global("R!KitanyaRomanceActive","GLOBAL",1)
 	      Global("PCAvoidedPhaere","LOCALS",0)~ THEN BEGIN PCAvoidedPhaere
   SAY @9 = @10 = @11
   IF ~~ THEN DO ~SetGlobal("PCAvoidedPhaere","LOCALS",1)~ EXIT
@@ -46,11 +40,8 @@ END
 
 IF WEIGHT #3 ~Global("PhaereInnuendo","GLOBAL",1)
 	      OR(2)
-		Global("R#KitanyaRomanceActive","GLOBAL",1)
-		Global("R#KitanyaRomanceActive","GLOBAL",2)
-	      InParty("R!Kitanya")
-	      !Dead("R!Kitanya")
-	      !StateCheck("R!Kitanya",STATE_SLEEPING)
+		Global("R!KitanyaRomanceActive","GLOBAL",1)
+		Global("R!KitanyaRomanceActive","GLOBAL",2)
               Global("PCWantsPhaere","LOCALS",0)~ THEN BEGIN PCWantsPhaere
  SAY @12
  ++@13 DO ~SetGlobal("PCWantsPhaere","LOCALS",1)~ +PCWantsPhaere1
@@ -649,7 +640,7 @@ INTERJECT PPSAEM2 24 r#KitSaemonSulda
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @178 = @179
 END
-+ ~OR(2) GlobalGT("R#KitanyaRomanceActive","GLOBAL",0) GlobalLT("R#KitanyaRomanceActive","GLOBAL",3)~ + @180 DO ~IncrementGlobal("KitLikes","GLOBAL",2)~ EXTERN R#KITYJ SpellholdStopJon
++ ~OR(2) GlobalGT("R!KitanyaRomanceActive","GLOBAL",0) GlobalLT("R!KitanyaRomanceActive","GLOBAL",3)~ + @180 DO ~IncrementGlobal("KitLikes","GLOBAL",2)~ EXTERN R#KITYJ SpellholdStopJon
 ++ @181 EXTERN R#KITYJ SpellholdStopJon
 ++ @182 DO ~IncrementGlobal("KitLikes","GLOBAL",-1)~ EXTERN R#KITYJ SpellholdStopJon2
 
@@ -739,16 +730,16 @@ EXTEND_BOTTOM PLAYER1 33
   IF ~InParty("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       InMyArea("R#Kitanya")
-      !Global("R#KitanyaRomanceActive","GLOBAL",2)
-      !Global("R#KitanyaRomanceActive","GLOBAL",1)~ THEN GOTO PCKitToLTalk
+      !Global("R!KitanyaRomanceActive","GLOBAL",2)
+      !Global("R!KitanyaRomanceActive","GLOBAL",1)~ THEN GOTO PCKitToLTalk
   IF ~InParty("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       InMyArea("R#Kitanya")
-      Global("R#KitanyaRomanceActive","GLOBAL",2)~ THEN GOTO PCKitToLTalk2
+      Global("R!KitanyaRomanceActive","GLOBAL",2)~ THEN GOTO PCKitToLTalk2
   IF ~InParty("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       InMyArea("R#Kitanya")
-      Global("R#KitanyaRomanceActive","GLOBAL",1)~ THEN GOTO PCKitToLTalk1
+      Global("R!KitanyaRomanceActive","GLOBAL",1)~ THEN GOTO PCKitToLTalk1
 END
 
 APPEND ~PLAYER1~
@@ -810,7 +801,7 @@ END
 END // of append
 
 EXTEND_BOTTOM ~BODHIAMB~ 5
-  IF ~Global("R#KitanyaRomanceActive","GLOBAL",2)
+  IF ~Global("R!KitanyaRomanceActive","GLOBAL",2)
       InParty("R!Kitanya")~ THEN GOTO KitBodhiVampChain
 END
 
@@ -1038,14 +1029,14 @@ APPEND R#KITYJ
 
 IF ~IsGabber(Player1)~ THEN BEGIN TalkedToByPC
   SAY @312
-  IF ~Global("R#KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @313 GOTO KitFlirt2
-  IF ~Global("R#KitanyaRomanceActive","GLOBAL",1)~ THEN REPLY @313 GOTO KitFlirt1
+  IF ~Global("R!KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @313 GOTO KitFlirt2
+  IF ~Global("R!KitanyaRomanceActive","GLOBAL",1)~ THEN REPLY @313 GOTO KitFlirt1
   IF ~~ THEN REPLY @314 GOTO Irenicus
   IF ~Global("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN REPLY @315 GOTO Rhynn
   IF ~~ THEN REPLY @316 GOTO KitPast
   IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY @317 GOTO KitCowled
   IF ~Gender(Player1,MALE)
-      GlobalLT("R#KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @318 GOTO KitInterests
+      GlobalLT("R!KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @318 GOTO KitInterests
   IF ~NumInPartyGT(2)~ THEN REPLY @319 GOTO KitCompanions
 END
 
@@ -1630,14 +1621,14 @@ END
 
 IF ~~ THEN BEGIN TalkedToByPC2
   SAY @489
-  IF ~Global("R#KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @313 GOTO KitFlirt2
-  IF ~Global("R#KitanyaRomanceActive","GLOBAL",1)~ THEN REPLY @313 GOTO KitFlirt1
+  IF ~Global("R!KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @313 GOTO KitFlirt2
+  IF ~Global("R!KitanyaRomanceActive","GLOBAL",1)~ THEN REPLY @313 GOTO KitFlirt1
   IF ~~ THEN REPLY @314 GOTO Irenicus
   IF ~Global("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN REPLY @315 GOTO Rhynn
   IF ~~ THEN REPLY @316 GOTO KitPast
   IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY @317 GOTO KitCowled
   IF ~Gender(Player1,MALE)
-      GlobalLT("R#KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @318 GOTO KitInterests
+      GlobalLT("R!KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @318 GOTO KitInterests
   IF ~~ THEN REPLY @319 GOTO KitCompanions
 END
 
@@ -1845,7 +1836,7 @@ END
 IF WEIGHT #1 ~Global("KitFlirts","GLOBAL",1)
 	      !Global("Chapter","GLOBAL",%bg2_chapter_5%)
 	      CombatCounter(0)
-	      Global("R#KitanyaRomanceActive","GLOBAL",1)
+	      Global("R!KitanyaRomanceActive","GLOBAL",1)
 	      See(Player1)
 	      !StateCheck(Player1,STATE_SLEEPING)
               GlobalTimerExpired("KitFlirt","GLOBAL")~ THEN BEGIN KitRomance1Flirts
@@ -1912,7 +1903,7 @@ IF ~~ THEN BEGIN KitFlirt1-10
   IF ~~ THEN EXIT
 END
 
-IF WEIGHT #2 ~Global("R#KitanyaRomanceActive","GLOBAL",2)
+IF WEIGHT #2 ~Global("R!KitanyaRomanceActive","GLOBAL",2)
 	      !Global("Chapter","GLOBAL",%bg2_chapter_5%)
 	      Global("KitFlirts","GLOBAL",1)
 	      CombatCounter(0)
@@ -1999,7 +1990,7 @@ END
 
 IF ~~ THEN BEGIN KitWorriedTalk-3
   SAY @585
-  IF ~~ THEN DO ~SetGlobal("R#KitanyaRomanceActive","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("R!KitanyaRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN KitWorriedTalk-4
@@ -2021,6 +2012,6 @@ END // Of appending
 
 EXTEND_BOTTOM UDPHAE01 106
  + ~OR(2)
-	Global("R#KitanyaRomanceActive","GLOBAL",1)
-	Global("R#KitanyaRomanceActive","GLOBAL",2)~ + @589+110
+	Global("R!KitanyaRomanceActive","GLOBAL",1)
+	Global("R!KitanyaRomanceActive","GLOBAL",2)~ + @589+110
 END
