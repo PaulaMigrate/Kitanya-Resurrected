@@ -150,7 +150,7 @@ END
 
 INTERJECT_COPY_TRANS ANOMEN 11 r#KitAnomenRighteousness
    == R#KITYJ IF ~InParty("R!Kitanya")
-	          See("R#Kitanya")
+	          See("R!Kitanya")
 	          !Dead("R!Kitanya")
 		  !StateCheck("R!Kitanya",STATE_SLEEPING)~ THEN @51 = @52
    == ANOMEN @53
@@ -158,7 +158,7 @@ END
 
 INTERJECT ANOMEN 16 r#KitAnomenLadies
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
 		 !Dead("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)~ THEN @54
   == ANOMEN @55 = @56
@@ -167,13 +167,13 @@ END ANOMEN 18
 
 INTERJECT_COPY_TRANS ANOMEN 25 r#KitAnomenTeam
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")~ THEN @58
+                 See("R!Kitanya")~ THEN @58
   DO ~ActionOverride("Anomen",JoinParty())~
 END
 
 INTERJECT FIRKRA01 5 r#KitLFirkFlattery
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @59
   == FIRKRA01 @60
@@ -182,42 +182,42 @@ END FIRKRA01 7
 
 INTERJECT_COPY_TRANS2 FIRMAG01 1 r#KitConsterDeath
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @62
 END
 
 INTERJECT FIRMAG01 2 r#KitConsterDevotion
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @63
   DO ~ActionOverride("Firmag01",Enemy())~ EXIT
 
 INTERJECT FIRMAG01 3 r#KitConsterDevotion2
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @63
  DO ~ActionOverride("Firmag01",Enemy())~ EXIT
 
 INTERJECT_COPY_TRANS HELLSARE 8 r#KitSarevokInHell
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @64
 END
 
 INTERJECT_COPY_TRANS HELLSARE 24 r#KitSarevokInHell2
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @64
 END
 
 INTERJECT_COPY_TRANS VICONI 8 r#KitViconiaBurningReason
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @65
   == VICONI @66
@@ -226,14 +226,14 @@ END
 
 INTERJECT_COPY_TRANS VICONI 2 r#KitViconiaRight
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @69
 END
 
 INTERJECT_COPY_TRANS BODHI 3 r#KitBodhiIntent
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @70
   == BODHI @71
@@ -241,35 +241,35 @@ END
 
 INTERJECT_COPY_TRANS BODHI 6 r#KitBodhiWork
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @72
 END
 
 INTERJECT_COPY_TRANS2 BODHI 28 r#KitBodhiRob
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @73 = @74
 END
 
 INTERJECT_COPY_TRANS BODHI 45 r#KitBodhiGoodEvil
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @75 = @76
 END
 
 INTERJECT_COPY_TRANS BODHI 62 r#KitBodhiFinalTask
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @77
 END
 
 INTERJECT_COPY_TRANS BODHI 82 r#KitBodhiIrenicus
   == R#KITYJ IF ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @78
   == BODHI @79
@@ -277,14 +277,14 @@ END
 
 INTERJECT_COPY_TRANS ARAN 4 r#KitAranFirst
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @80 = @81
 END
 
 INTERJECT_COPY_TRANS ARAN 13 r#KitAranBodhi
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @82 = @83
   == ARAN @84
@@ -292,21 +292,21 @@ END
 
 INTERJECT_COPY_TRANS ARAN 40 r#KitAranSpellhold
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @85 = @86
 END
 
 INTERJECT_COPY_TRANS ARAN 47 r#KitAranDepart
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @87
 END
 
 INTERJECT_COPY_TRANS ARAN 85 r#KitAranBodhiReturns
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @88
   == ARAN @89
@@ -314,7 +314,7 @@ END
 
 INTERJECT_COPY_TRANS BEGGAR1 6 r#KitBeggarSlaves
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @90
   == BEGGAR1 @91
@@ -326,7 +326,7 @@ END
 
 INTERJECT_COPY_TRANS BEGGAR3 5 r#KitBeggarHusband
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @95
   == BEGGAR3 @96
@@ -334,14 +334,14 @@ END
 
 INTERJECT_COPY_TRANS CELOGAN 18 r#KitLoganPrejudice
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @97 = @98
 END
 
 INTERJECT_COPY_TRANS CELOGAN 21 r#KitLoganTask
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @99
   == CELOGAN @100
@@ -349,21 +349,21 @@ END
 
 INTERJECT_COPY_TRANS CELOGAN 22 r#KitLoganCernd
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @101
 END
 
 INTERJECT_COPY_TRANS CELOGAN 57 r#KitLoganRakshasa
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @102
 END
 
 INTERJECT_COPY_TRANS PPIRENI2 49 r#KitYoshiDiscover
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @103 = @104
   == PPIRENI2 @105 = @106
@@ -373,7 +373,7 @@ END
 
 INTERJECT_COPY_TRANS PPIRENI2 53 r#KitIrenicusYoshDiscover
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @109
   == PPIRENI2 @110
@@ -381,7 +381,7 @@ END
 
 INTERJECT_COPY_TRANS PPIRENI2 35 r#KitIrenicusThreat
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @111 = @112
 END
@@ -389,7 +389,7 @@ END
 INTERJECT_COPY_TRANS YOSHJ 113 r#KitYoshTraitor
   == R#KITYJ IF ~Global("YoshNoticeKit","GLOBAL",1)
                  InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @113
   == YOSHJ @114
@@ -397,14 +397,14 @@ END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 1 r#PCAttackDrizzt
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @115 = @116 = @117
 END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 5 r#KitDrizztFight
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -413,7 +413,7 @@ END
 
 INTERJECT C6DRIZZ1 7 r#KitDrizztFriend
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @119
   == C6DRIZZ1 @120
@@ -425,7 +425,7 @@ END C6DRIZZ1 8
 
 INTERJECT_COPY_TRANS C6DRIZZ1 9 r#KitDrizztFight2
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -434,7 +434,7 @@ END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 18 r#KitDrizztFight3
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -443,14 +443,14 @@ END
 
 INTERJECT_COPY_TRANS2 C6DRIZZ1 37 r#KitDrizztJoined
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @125 = @126
 END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 41 r#KitDrizztFight4
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -459,7 +459,7 @@ END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 48 r#KitDrizztFight5
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -468,7 +468,7 @@ END
 
 INTERJECT_COPY_TRANS C6DRIZZ1 55 r#KitDrizztFight6
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @118
 DO ~ActionOverride("R!Kitanya",LeaveParty())
@@ -477,7 +477,7 @@ END
 
 INTERJECT_COPY_TRANS LYROS 16 r#KitXzarOpinion
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @127
   == LYROS @128
@@ -485,28 +485,28 @@ END
 
 INTERJECT_COPY_TRANS LYROS 19 r#KitXzarQuest
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @129
 END
 
 INTERJECT_COPY_TRANS EDWIN 8 r#KitEdwinRayic
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @130 = @131
 END
 
 INTERJECT_COPY_TRANS EDWIN 26 r#KitEdwinHonor
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @132 = @133
 END
 
 INTERJECT_COPY_TRANS LAVOK 2 r#KitLavokFake
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @134
   == VALYGARJ @135
@@ -516,7 +516,7 @@ END
 
 INTERJECT LAVOK 21 r#KitLavokEvil
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @138
   == LAVOK @139 = @140 = @141
@@ -533,7 +533,7 @@ END LAVOK 47
 
 INTERJECT VALYGARJ 108 r#KitValyPartyStay
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @152
   == VALYGARJ @153
@@ -547,7 +547,7 @@ END VALYGARJ 112
 
 EXTEND_BOTTOM VALYGARJ 117
   IF ~InParty("R!Kitanya")
-      See("R#Kitanya")
+      See("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Dead("R!Kitanya")
       Global("R#KitValyOpinionRendered","GLOBAL",0)~ THEN DO ~SetGlobal("R#KitValyOpinionRendered","GLOBAL",1)~ EXTERN R#KITYJ KitValyCowledQuest
@@ -555,7 +555,7 @@ END
 
 EXTEND_BOTTOM TOLGER 84
   IF ~InParty("R!Kitanya")
-      See("R#Kitanya")
+      See("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Dead("R!Kitanya")
       Global("R#KitValygarSurrendered","GLOBAL",0)~ THEN DO ~SetGlobal("R#KitValygarSurrendered","GLOBAL",1)~ EXTERN R#KITYJ ValygarCowledGiven
@@ -563,35 +563,35 @@ END
 
 INTERJECT_COPY_TRANS UDPHAE01 48 r#KitPhaeBehold
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @160 = @161
 END
 
 INTERJECT_COPY_TRANS UDPHAE01 88 r#KitPhaeSola
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @162 = @163
 END
 
 INTERJECT_COPY_TRANS UDPHAE01 136 r#KitPhaeDemon
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @164
 END
 
 INTERJECT UDPHAE01 140 r#KitPhaeDemonSilver
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @165
 END UDPHAE01 141
 
 INTERJECT_COPY_TRANS UDSILVER 9 r#KitAdalonA
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @166
   == UDSILVER @167
@@ -600,28 +600,28 @@ END
 
 INTERJECT_COPY_TRANS UDSILVER 16 r#KitAdalonElves
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @169 = @170
 END
 
 INTERJECT_COPY_TRANS NOBLEM1 7 r#KitMagic
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @171
 END
 
 INTERJECT_COPY_TRANS2 PPSAEM2 8 r#KitInmatesHelp
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @172 = @173
 END
 
 INTERJECT PPSAEM2 12 r#KitSaemonBash
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @174
   == PPSAEM2 @175
@@ -629,14 +629,14 @@ END PPSAEM2 16
 
 INTERJECT_COPY_TRANS PPSAEM2 19 r#KitSaemonAllies
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @176 = @177
 END
 
 INTERJECT PPSAEM2 24 r#KitSaemonSulda
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @178 = @179
 END
@@ -646,14 +646,14 @@ END
 
 INTERJECT PPSAEM3 1 r#KitNoShip
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @183
 END PPSAEM3 3
 
 INTERJECT_COPY_TRANS SUDEMIN 5 r#KitElhanDemin
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @184
   = @185
@@ -661,7 +661,7 @@ END
 
 INTERJECT SUDEMIN 11 r#KitDeminEmotion
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @186
   == SUDEMIN @187
@@ -669,21 +669,21 @@ END SUDEMIN 12
 
 INTERJECT_COPY_TRANS SUDEMIN 38 r#RudeToDemin
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @188
 END
 
 INTERJECT_COPY_TRANS PLAYER1 25 r#KitInHell
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @189 = @190
 END
 
 EXTEND_BOTTOM SUDEMIN 40
   IF ~InParty("R!Kitanya")
-      See("R#Kitanya")
+      See("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Dead("R!Kitanya")~ THEN DO ~Enemy()
 				  ActionOverride("R!Kitanya",LeaveParty())
@@ -693,35 +693,35 @@ END
 
 INTERJECT_COPY_TRANS SUDEMIN 45 r#AcceptedQuest
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @191
 END
 
 INTERJECT_COPY_TRANS HELLJON 7 r#DieSlayer
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @192
 END
 
 INTERJECT_COPY_TRANS HELLJON 8 r#DieSlayer2
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @192
 END
 
 INTERJECT_COPY_TRANS HELLJON 9 r#DieSlayer3
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @192
 END
 
 INTERJECT_COPY_TRANS HELLJON 10 r#DieSlayer4
   == R#KITYJ IF ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")~ THEN @192
 END
@@ -807,7 +807,7 @@ END
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
                  Global("R#KitBeggar2","LOCALS",0)~ THEN BEGGAR2 KitTalkChain @210
@@ -825,7 +825,7 @@ EXIT
 
 CHAIN
   IF WEIGHT #-999 ~InParty("R!Kitanya")
-                   See("R#Kitanya")
+                   See("R!Kitanya")
                    !StateCheck("R!Kitanya",STATE_SLEEPING)
 		   !Dead("R!Kitanya")
                    Global("KitRibald","LOCALS",0)~ THEN RIBALD MeetKitanyaChain @220
@@ -841,7 +841,7 @@ END RIBALD 0
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
 		 !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
                  Global("KitBelminInsult","LOCALS",0)
@@ -865,7 +865,7 @@ END
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
                  Global("SoldSphereKit","LOCALS",0)~ THEN WAYLANE KitSellChain @247
@@ -885,7 +885,7 @@ EXIT
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-  	         See("R#Kitanya")
+  	         See("R!Kitanya")
 	         !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
 	         RandomNum(2,1)
@@ -898,7 +898,7 @@ EXIT
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-                 See("R#Kitanya")
+                 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
                  OR(3)
@@ -926,7 +926,7 @@ END
 
 CHAIN
   IF WEIGHT #-2 ~InParty("R!Kitanya")
-                  See("R#Kitanya")
+                  See("R!Kitanya")
       		  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		  !Dead("R!Kitanya")
                   InParty("Mazzy")
@@ -943,7 +943,7 @@ END SHADEL KitRefused
 
 CHAIN
   IF WEIGHT #-999 ~InParty("R!Kitanya")
-                   See("R#Kitanya")
+                   See("R!Kitanya")
                    !StateCheck("R!Kitanya",STATE_SLEEPING)
 		   !Dead("R!Kitanya")
                    Global("KitSalvanas","LOCALS",0)~ THEN SALVANAS KitFlirtChain @282
@@ -962,7 +962,7 @@ EXIT
 
 CHAIN
   IF WEIGHT #-1 ~InParty("R!Kitanya")
-		 See("R#Kitanya")
+		 See("R!Kitanya")
                  !StateCheck("R!Kitanya",STATE_SLEEPING)
 		 !Dead("R!Kitanya")
                  Global("KitNoble","LOCALS",0)~ THEN NOBLEM1 KitProposeChain @293
@@ -974,7 +974,7 @@ EXIT
 
 CHAIN
   IF ~InParty("R!Kitanya")
-      See("R#Kitanya")
+      See("R!Kitanya")
       !StateCheck("R!Kitanya",STATE_SLEEPING)
       !Dead("R!Kitanya")
       Global("KitMurtlen","LOCALS",0)~ THEN MURTLEN KitCheatChain @297
@@ -984,7 +984,7 @@ EXIT
 
 CHAIN
   IF WEIGHT #-999 ~InParty("R!Kitanya")
-		   See("R#Kitanya")
+		   See("R!Kitanya")
 		   !StateCheck("R!Kitanya",STATE_SLEEPING)
 		   !Dead("R!Kitanya")
 		   Global("ElvenAvatar","GLOBAL",0)
