@@ -92,6 +92,7 @@ IF
   Global("r!KitanyaRomanceActive","GLOBAL",1)
   GlobalGT("r!KitLoveTalk","GLOBAL",5)
   !Global("r!KitFlirts","GLOBAL",-1)
+  !Global("r!KitFlirts","GLOBAL",1)
 THEN
   RESPONSE #100
     SetGlobal("r!KitFlirts","GLOBAL",1)
@@ -100,6 +101,7 @@ END
 IF
   Global("r!KitanyaRomanceActive","GLOBAL",2)
   !Global("r!KitFlirts","GLOBAL",-1)
+  !Global("r!KitFlirts","GLOBAL",2)
 THEN
   RESPONSE #100
     SetGlobal("r!KitFlirts","GLOBAL",2)
