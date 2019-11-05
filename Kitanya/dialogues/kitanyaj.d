@@ -1013,7 +1013,7 @@ APPEND BODHIAMB
   SAY @306
   IF ~~ THEN DO ~ClearAllActions()
                  StartCutSceneMode()
-                 StartCutScene("kitvamp")~ UNSOLVED_JOURNAL @307 EXIT
+                 StartCutScene("r!kitvmp")~ UNSOLVED_JOURNAL @307 EXIT
 END
 
 END // of append

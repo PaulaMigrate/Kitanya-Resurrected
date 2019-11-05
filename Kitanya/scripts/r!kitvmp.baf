@@ -3,7 +3,7 @@ IF
 THEN
   RESPONSE #100
     CutSceneID("r!Kitanya")
-    CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","Kitanya")
+    CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","r!Kitanya")
     SetGlobal("r!KitVampire","GLOBAL",1)
     Wait(1)
     CreateVisualEffectObject("SPDISPMA",Myself)
