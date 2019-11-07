@@ -9,8 +9,8 @@ IF ~~ THEN BEGIN PowerExplain
 END
 
 EXTEND_BOTTOM C6BODHI 23
-  IF ~Global("KitVampire","GLOBAL",2)~ THEN REPLY @0 GOTO KitThreatenChain
-  IF ~Global("KitVampire","GLOBAL",2)~ THEN REPLY @1 GOTO KitThreatenChain
+  IF ~Global("r!KitVampire","GLOBAL",2)~ THEN REPLY @0 GOTO KitThreatenChain
+  IF ~Global("r!KitVampire","GLOBAL",2)~ THEN REPLY @1 GOTO KitThreatenChain
 END
 
 CHAIN C6BODHI KitThreatenChain @2 = @3
@@ -47,8 +47,8 @@ APPEND C6BODHI
 END // APPEND
 
 EXTEND_BOTTOM C6BODHI 23
-  IF ~Global("SolaVampire","GLOBAL",2) Global("KitVampire","GLOBAL",2)~ THEN REPLY @16 GOTO KitSolaHand
-  IF ~Global("SolaVampire","GLOBAL",2) Global("KitVampire","GLOBAL",2)~ THEN REPLY @17  GOTO KitSolaHand
+  IF ~Global("SolaVampire","GLOBAL",2) Global("r!KitVampire","GLOBAL",2)~ THEN REPLY @16 GOTO KitSolaHand
+  IF ~Global("SolaVampire","GLOBAL",2) Global("r!KitVampire","GLOBAL",2)~ THEN REPLY @17  GOTO KitSolaHand
 END
 
 APPEND VALYGARJ
@@ -80,4 +80,8 @@ APPEND SOLAVAMP
   SAY @37=@38=@39=@40=@41=@42=@43
   IF ~~ THEN EXTERN C6BODHI KitSolaHush
  END 
+END
+
+EXTEND_BOTTOM DOGHMA 0 #5
++ ~PartyHasItem("r!kitbdy")~ + #57916 GOTO 10
 END

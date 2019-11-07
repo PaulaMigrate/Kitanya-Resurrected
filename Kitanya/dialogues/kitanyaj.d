@@ -800,9 +800,8 @@ END
 
 END // of append
 
-EXTEND_BOTTOM ~BODHIAMB~ 5
-  IF ~Global("R!KitanyaRomanceActive","GLOBAL",2)
-      InParty("R!Kitanya")~ THEN GOTO KitBodhiVampChain
+EXTEND_TOP ~BODHIAMB~ 5 #1
+IF ~OR(2)Global("R!KitanyaRomanceActive","GLOBAL",2) Global("R!KitanyaRomanceActive","GLOBAL",1) InParty("R!Kitanya")~ THEN GOTO KitBodhiVampChain
 END
 
 CHAIN

@@ -28,7 +28,7 @@ IF WEIGHT #2 ~Global("KitanyaRomanceActive","GLOBAL",1)~ THEN BEGIN KickedInFlir
 END
 
 // After reviving her from Bodhi's vampirism
-IF WEIGHT #0 ~Global("KitVampire","GLOBAL",5)~ THEN BEGIN KitRevived
+IF WEIGHT #0 ~Global("r!KitVampire","GLOBAL",5)~ THEN BEGIN KitRevived
  SAY @14
  ++@15 DO ~EraseJournalEntry(@0)
 EraseJournalEntry(@1)
@@ -45,7 +45,7 @@ EraseJournalEntry(11864)
 EraseJournalEntry(3374)
 EraseJournalEntry(3377)
 EraseJournalEntry(3927)
-SetGlobal("KitVampire","GLOBAL",6)
+SetGlobal("r!KitVampire","GLOBAL",6)
 JoinParty()~ SOLVED_JOURNAL @16 EXIT
  ++@17 DO ~EraseJournalEntry(@0)
 EraseJournalEntry(@1)
@@ -62,7 +62,7 @@ EraseJournalEntry(11864)
 EraseJournalEntry(3374)
 EraseJournalEntry(3377)
 EraseJournalEntry(3927)
-SetGlobal("KitVampire","GLOBAL",6)~ SOLVED_JOURNAL @16+ KitVampLeave
+SetGlobal("r!KitVampire","GLOBAL",6)~ SOLVED_JOURNAL @16+ KitVampLeave
  ++@18 DO ~EraseJournalEntry(@0)
 EraseJournalEntry(@1)
 EraseJournalEntry(32084)
@@ -78,7 +78,7 @@ EraseJournalEntry(11864)
 EraseJournalEntry(3374)
 EraseJournalEntry(3377)
 EraseJournalEntry(3927)
-SetGlobal("KitVampire","GLOBAL",6)
+SetGlobal("r!KitVampire","GLOBAL",6)
 JoinParty()~ SOLVED_JOURNAL @16+ KitVampRoom
 END
 
