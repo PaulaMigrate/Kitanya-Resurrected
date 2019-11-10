@@ -16,5 +16,6 @@ THEN
     MoveGlobal("AR1401","r!Kitanya",[2565.1677])
     Wait(1)
     ChangeEnemyAlly("r!Kitanya",NEUTRAL)
+    ActionOverride("r!Kitanya",ChangeAIScript("r!kitmn",OVERRIDE))
     SetInterrupt(TRUE)
 END

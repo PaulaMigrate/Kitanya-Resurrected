@@ -9,7 +9,7 @@ THEN
     CreateVisualEffectObject("SPDISPMA",Myself)
     DropInventory()
     SetLeavePartyDialogueFile()
-    ChangeAIScript("VAMPAMB",OVERRIDE)
+    ChangeAIScript("r!vmpkit",OVERRIDE)
     ChangeAIScript("",DEFAULT)
     DialogueInterrupt(FALSE)
     LeaveParty()

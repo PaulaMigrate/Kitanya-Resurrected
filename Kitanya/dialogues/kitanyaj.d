@@ -1,12 +1,8 @@
 BEGIN R#KITYJ
 
-IF WEIGHT #0 ~AreaCheck("AR2800")
-              InParty("R!Kitanya")
-	      !Dead("R!Kitanya")
-	      !StateCheck("R!Kitanya",STATE_SLEEPING)
-              Global("R#KitanyaHome","GLOBAL",0)~ THEN BEGIN KitanyaHomeSay
+IF WEIGHT #0 ~ Global("R!KitanyaHome","GLOBAL",1)~ THEN BEGIN KitanyaHomeSay
    SAY @0 = @1 = @2
-   IF ~~ THEN DO ~SetGlobal("R#KitanyaHome","GLOBAL",1)~ EXIT
+   IF ~~ THEN DO ~SetGlobal("R!KitanyaHome","GLOBAL",2)~ EXIT
 END
 
 IF WEIGHT #1 ~Global("PhaereInnuendo","GLOBAL",2)
