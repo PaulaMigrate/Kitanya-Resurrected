@@ -1026,7 +1026,7 @@ IF ~IsGabber(Player1)~ THEN BEGIN TalkedToByPC
   SAY @312
   IF ~Global("R!KitanyaRomanceActive","GLOBAL",2)~ THEN REPLY @313 GOTO KitFlirt2
   IF ~Global("R!KitanyaRomanceActive","GLOBAL",1)~ THEN REPLY @313 GOTO KitFlirt1
-  IF ~~ THEN REPLY @314 GOTO Irenicus
+  IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_7%)~ THEN REPLY @314 GOTO Irenicus
   IF ~Global("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN REPLY @315 GOTO Rhynn
   IF ~~ THEN REPLY @316 GOTO KitPast
   IF ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)~ THEN REPLY @317 GOTO KitCowled
