@@ -2,7 +2,7 @@ BACKUP ~Kitanya/backup~
 //AUTHOR ~rastor@rpgdungeon.net~
 SUPPORT ~PaulaMigrate@mail.com~
 
-VERSION ~v7.1~
+VERSION ~v7.2~
 
 AUTO_TRA ~Kitanya/%s~
 
@@ -148,9 +148,6 @@ EXTEND_TOP ~baldur.bcs~ ~Kitanya/appends/kbaldur.baf~
  EVALUATE_BUFFER
 
 EXTEND_TOP ~edwin.bcs~ ~Kitanya/appends/eddy.baf~
- EVALUATE_BUFFER
-
-EXTEND_TOP ~AR1100.bcs~ ~Kitanya/appends/ar1100.baf~
  EVALUATE_BUFFER
 
 COMPILE EVALUATE_BUFFER ~Kitanya/scripts~
